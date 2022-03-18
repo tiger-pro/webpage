@@ -1,0 +1,62 @@
+baseURL = "https://tigerpro.co/"
+languageCode = "en-us"
+title = "Tiger Pro"
+themesDir = "themes"
+theme = "hugo-hero-theme"
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.92.0"
+
+[params]
+  google_analytics_id=""
+
+  [params.logo]
+    mobile = "images/logo-mobile.svg"
+    mobile_height = "36px"
+    mobile_width = "36px"
+    desktop = "images/logo.svg"
+    desktop_height = "29px"
+    desktop_width = "217px"
+    alt = "Tiger Pro"
+
+  [params.homepage_meta_tags]
+    meta_description = "Professional services in programming, security and automation."
+    meta_og_title = "Tiger Pro"
+    meta_og_type = "website"
+    meta_og_url = "https://tigerpro.co/"
+    meta_og_image = "https://raw.githubusercontent.com/JugglerX/hugo-hero-theme/master/images/tn.png"
+    meta_og_description = "Professional services in programming, security and automation."
+    meta_twitter_card = "summary"
+    meta_twitter_site = "@TadejJanez"
+    meta_twitter_creator = "@TadejJanez"
+
+[[menu.main]]
+	name = "Services"
+	url = "/services/"
+    weight = 1
+
+[[menu.main]]
+    name = "Work"
+    url = "/work/"
+    weight = 2
+
+[[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 3
+
+[[menu.main]]
+    name = "History"
+    url = "/history/"
+    weight = 3
+
+[[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 4
+
+[permalinks]
+  post = "/:year/:month/:day/:slug/"
+  pages = "/:filename/"
